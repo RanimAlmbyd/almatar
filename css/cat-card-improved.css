@@ -1,0 +1,73 @@
+/* --- Improved Our Category Card Styles --- */
+.cat-card {
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12), 0 1.5px 6px rgba(44, 62, 80, 0.08);
+    transition: transform 0.25s cubic-bezier(.4,2,.3,1), box-shadow 0.25s cubic-bezier(.4,2,.3,1);
+    overflow: hidden;
+    background: #fff;
+    margin: 1.2rem 0.7rem;
+    border: none;
+    position: relative;
+}
+.cat-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.18), 0 4px 12px rgba(44, 62, 80, 0.13);
+    z-index: 2;
+}
+.cat-img {
+    border-radius: 16px 16px 0 0;
+    object-fit: cover;
+    height: 180px;
+    width: 100%;
+    transition: filter 0.3s;
+}
+.cat-card:hover .cat-img {
+    filter: brightness(0.93) saturate(1.1);
+}
+.cat-card-body {
+    padding: 1.2rem 1rem 1.3rem 1rem;
+    text-align: center;
+}
+.cat-card-title {
+    font-size: 1.18rem;
+    font-weight: 600;
+    color: #292929;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.01em;
+}
+.cat-card-link {
+    display: inline-block;
+    padding: 0.45rem 1.2rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--primary-ranim), var(--primary-hover-ranim));
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(205,31,37,0.08);
+    transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+.cat-card-link:hover {
+    background: linear-gradient(90deg, var(--primary-hover-ranim), var(--primary-ranim));
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(205,31,37,0.15);
+    text-decoration: none;
+}
+@media (max-width: 991px) {
+    .cat-card {
+        width: 90% !important;
+        margin: 1.2rem auto;
+    }
+    .cat-img {
+        height: 140px;
+    }
+}
+@media (max-width: 575px) {
+    .cat-card {
+        width: 100% !important;
+        margin: 1rem 0;
+    }
+    .cat-img {
+        height: 110px;
+    }
+}

@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.patagonia.com/home/ -->
+<head>
+    <meta charset="utf-8">
+    <title>MultiShop - Online Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid " style="font-size: 14px">
+        <div class="row align-items-center bg-light px-xl-5">
+            <div class="col-4 d-block d-lg-none">
+                <button type="button" class="navbar-toggler d-block d-lg-none" id="sidebarToggle">  
+                    <a style="display: block;width: 20px;height: 20px;">
+                        <img src="./icon/bars-solid-r.svg" alt="" style="height: 100%; width: 100%;">
+                    </a>
+                </button>
+            </div>
+
+            <div class="col-4">
+                <a href="" class="text-decoration-none">
+                    <div class="style-logo-custom">
+                        <img style="height: 100%; width: 100%;" src="./img/Untitled-678.png" />
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 d-block d-lg-none d-flex justify-content-end">
+                <div class="circle-user">
+                    <button type="button" class="navbar-toggler d-block d-lg-none" id="sidebarToggle" style="margin-bottom: 6px;">  
+                        <a style="display: block;width: 20px;height: 20px;">
+                            <img src="./icon/user-solid-w.svg" alt="" style="height: 100%; width: 100%;">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4 col-6 text-left d-none d-lg-block">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for products" style="border-radius: 5px 0px 0px 5px;font-size: 14px;">
+                        <div class="input-group-append text-primary-search-cont">
+                            <span class="input-group-text bg-transparent text-primary-search">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 col-6 text-right d-none d-lg-block">
+                <span class="m-2 span-hover-ranim">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" role="button" class="contact-us">Contact Us</a>
+                </span>
+                <span class="m-2 span-hover-ranim">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal" role="button" class="contact-us">Location</a>
+                </span>
+            </div>
+        </div>
+    </div>
+<!-- Contact Us Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Get in Touch with Us</h5>
+                <button type="button" class="btn-close button-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name"
+                            required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email"
+                            required="required" data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <textarea class="form-control" rows="5" id="message" placeholder="Message"
+                            required="required"
+                            data-validation-required-message="Please enter your message"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="description-btn">
+                        <button>Send Message</button>
+                    </div>
+                </form>
+                <div class="row">
+                    <a href="https://www.facebook.com/yourpage" target="_blank" class="mx-2 text-primary fs-4 social-icon-link">
+                            <img src="./icon/facebook-color-svgrepo-com.svg" alt="" class="social-icon-img">
+                    </a>
+                    <a href="https://wa.me/1234567890" target="_blank" class="mx-2 text-success fs-4 social-icon-link">
+                        <img src="./icon/instagram-1-svgrepo-com.svg" class="social-icon-img"/>
+                    </a>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" class="mx-2 fs-4 social-icon-link">
+                        <img src="./icon/whatsapp-svgrepo-com.svg" class="social-icon-img"/>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Location Modal -->
+<div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="mapModalLabel">Your Location</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-7 mb-3 mb-md-0">
+                        <div id="map" style="height: 340px; border-radius:10px; overflow:hidden;"></div>
+                    </div>
+                    <div class="col-md-5 d-flex align-items-center">
+                        <div class="location-info-box p-3 rounded w-100" style="background: var(--black-ranim); color: var(--primary-ranim); border: 2px solid var(--primary-ranim);">
+                            <h5 style="color: var(--primary-ranim);">Our Location</h5>
+                            <p style="margin-bottom: 0.5rem;"><strong>Address:</strong><br>123 Main Street, Your City, Country</p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong><br><a href="tel:+1234567890" style="color: var(--primary-ranim); text-decoration:underline;">+1 234 567 890</a></p>
+                            <p style="margin-bottom: 0.5rem;"><strong>Email:</strong><br><a href="mailto:info@example.com" style="color: var(--primary-ranim); text-decoration:underline;">info@example.com</a></p>
+                            <p style="margin-bottom: 0;"><strong>Working Hours:</strong><br>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Model -->
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+            <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-5 fw-semibold">Collapsible</span>
+          </a>
+          <ul class="list-unstyled ps-0">
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                Home
+              </button>
+              <div class="collapse" id="home-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Overview</a></li>
+                  <li><a href="#" class="link-dark rounded">Updates</a></li>
+                  <li><a href="#" class="link-dark rounded">Reports</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                Dashboard
+              </button>
+              <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">Overview</a></li>
+                  <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                  <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                  <li><a href="#" class="link-dark rounded">Annually</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                Orders
+              </button>
+              <div class="collapse" id="orders-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">New</a></li>
+                  <li><a href="#" class="link-dark rounded">Processed</a></li>
+                  <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                  <li><a href="#" class="link-dark rounded">Returned</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+                Account
+              </button>
+              <div class="collapse" id="account-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-dark rounded">New...</a></li>
+                  <li><a href="#" class="link-dark rounded">Profile</a></li>
+                  <li><a href="#" class="link-dark rounded">Settings</a></li>
+                  <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+    </div>
+    <div id="overlay" class="overlay"></div>
+    <!-- End Sidebar -->
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid background-color-black">
+        <div class="row px-xl-5">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-dark py-3 py-lg-0 px-0"> 
+                    <div class="navbar-nav ml-0 py-0 d-none col-lg-10 d-lg-block">
+                        <ul class="list-unstyled d-flex gap-3 m-0 p-0 pb-3 pt-3" style="white-space: nowrap;overflow-y: auto;">
+                            <li style="margin-right: 10px;">
+                              <a href="#" style="color: white;">
+                                <img src="./icon/crown-solid.svg" style="width: 19px;margin-bottom: 5px;margin-right: 4px;"/>
+                                Gold Section
+                              </a>
+                            </li>
+                            <li style="margin-right: 10px;">
+                              <a href="#" style="color: white;">
+                                Bronze Section
+                              </a>
+                            </li>
+                            <li style="margin-right: 10px;">
+                              <a href="#" style="color: white;">
+                                Platinum Section
+                              </a>
+                            </li>
+                            <li style="margin-right: 10px;">
+                              <a href="#" style="color: white;">
+                                For Professionals
+                              </a>
+                            </li>
+                            <li style="margin-right: 10px;">
+                              <a href="#" style="color: white;">
+                                For Beginners
+                              </a>
+                            </li>
+                        </ul>
+                    </div>   
+                    <div class="navbar-nav ml-auto py-0 d-none col-lg-2 d-lg-block">
+                        <div class="d-flex justify-content-end w-100 gap-4">
+                            <a href="" class="btn px-0 heart-nav d-flex align-items-center gap-1 position-relative">
+                                <img src="./icon/heart-solid-wh.svg" class="heart-icon" />
+                                <span class="heart-nav-circle">5</span>
+                            </a>
+                            <a href="" class="btn px-0 heart-nav d-flex align-items-center gap-1 position-relative">
+                                <img src="./icon/basket-shopping-solid-wh.svg" class="heart-icon" />
+                                <span class="heart-nav-circle">5</span>
+                            </a>
+                            <a href="" class="btn px-0 heart-nav d-flex align-items-center gap-1 position-relative">
+                                <img src="./icon/globe-solid-wh.svg" class="heart-icon" />
+                                <!-- <span class="heart-nav-circle">5</span> -->
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 text-left d-block d-lg-none">
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search for products" style="border-radius: 5px 0px 0px 5px;font-size: 14px;">
+                                <div class="input-group-append text-primary-search-cont">
+                                    <span class="input-group-text bg-transparent text-primary text-primary-search">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid custom-container">
+
+        <div id="header-carousel" class="carousel slide carousel-fade mb-30 mb-lg-0 p-0" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#header-carousel" data-slide-to="1"></li>
+                        <li data-target="#header-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item position-relative active" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="img/slider/Untitled design (3).png" style="object-fit: cover;">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Welcome to the World of Art & Creativity</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Colors, Imagination, Creativity – Discover It Here
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="img/slider/Untitled design (4).png" style="object-fit: cover;">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Your Favorite Store for All Things Artistic</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Start Your Artistic Journey Here</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative" style="height: 430px;">
+                            <img class="position-absolute w-100 h-100" src="img/slider/Untitled design (5).png" style="object-fit: cover;">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                <div class="p-3" style="max-width: 700px;">
+                                    <h1 class="display-4 text-white mb-3 animate__animated animate__fadeInDown">Everything You Need to Create Your Art</h1>
+                                    <p class="mx-md-5 px-5 animate__animated animate__bounceIn">Your Touch Makes the Difference – We Provide the Tools
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Our Category -->
+    <div class="container-fluid pt-5 pb-3 mt-3 position-relative">
+        <h2 class="section-title position-relative mx-xl-5 mb-4">
+            <span class="pr-3">Our Category</span>
+        </h2>
+        <div id="left-btn-scroll" class="scroll-btn" style="left: 10px;">
+            <button class="left-bbtn">
+                <img src="./icon/angle-small-left.svg" style="width: 160%;margin-left: -5px;"/>
+            </button>
+        </div>
+        <div id="right-btn-scroll" class="scroll-btn" style="right: 10px;">
+            <button class="right-bbtn">
+                <img src="./icon/angle-small-right.svg" style="width: 160%;margin-left: -5px;"/>
+            </button>
+        </div>
+        <div class="row px-xl-5 cat-row" id="cat-row-overflow">
+           <div class="card cat-card" style="width: 18rem;">
+                <div class="img-title">
+                    <img src="./img/category/drawing-colors.png" class="card-img-top cat-img" />
+                    
+                </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Drawing Colors</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/category/drawing-tools-and-aids.png" class="card-img-top cat-img" />
+                
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Drawing Tools and Aids</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/markers.png" class="card-img-top cat-img" />
+    
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Markers</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/gematric.png" class="card-img-top cat-img" />
+        
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Pencils and Geometric Tools</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/office.png" class="card-img-top cat-img" />
+        
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Office Supplies and Stationery</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/boards.png" class="card-img-top cat-img" />
+        
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Drawing Boards & Art Materials</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/modeling.png" class="card-img-top cat-img" />
+        
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Modeling Clay & Sculpting Tools</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+           <div class="card cat-card" style="width: 18rem;">
+            <div class="img-title">
+                <img src="./img/kids.png" class="card-img-top cat-img" />
+        
+              </div>
+                <div class="card-body cat-card-body">
+                    <h5 class="card-title cat-card-title">Safe and Fun Paints for Kids</h5>
+                    <a href="#" class="card-link cat-card-link">Shop Now!</a>
+                </div>
+           </div>
+        </div>
+        
+    </div>
+    <!-- End Our Category -->
+
+
+    <!-- Products Start -->
+    <div class="container-fluid pt-5 pb-3 mt-3 trending-section">
+        <!-- <div class="trending-heading">
+            <span class="fire">🔥</span>
+            Trending <span class="highlight">NOW</span>
+        </div> -->
+        <h2 class="section-title position-relative mx-xl-5 mb-4">
+            <span class="pr-3">Trending Now</span>
+        </h2>
+        <div class="row px-xl-5 justify-content-center">
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">description short text text short Please.</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">description short text text short Please.</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">description short text text short Please.</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, obcaecati! Quisquam est iure quasi ipsum officiis illo dolor ipsam quam, exercitationem eum nobis nihil distinctio nostrum, deleniti, maiores autem vero?</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-4">
+            <button class="trending-show-more">Show More</button>
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Offer Start -->
+    <div class="container pt-5 pb-3 mt-3">
+        <h2 class="section-title position-relative mx-xl-5 mb-4">
+            <span class="pr-3">Offers & discounts</span>
+        </h2>
+        <div class="row px-xl-5">
+            <div class="col-md-4 mt-3">
+                <div class="container_offer">
+                    <div class="card_box_offer">
+                        <img src="./img/a2baffd6470811c1634cf29963d9f2b2.jpg" class="omg-offer"/>
+                        <span></span>
+                        <div>Title</div>
+                        <div>Descripthion</div>
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+
+                <div class="container_offer">
+                    <div class="card_box_offer">
+                        <img src="./img/b04d9c319f05533a9e761745bad90580.jpg" class="omg-offer"/>
+                        <span></span>
+                        <div>Title</div>
+                        <div>Descripthion</div>
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+
+                <div class="container_offer">
+                    <div class="card_box_offer">
+                        <img src="./img/096ac61e97225f8b3b69a8c8d9a08cae.jpg" class="omg-offer"/>
+                        <span></span>
+                        <div>Title</div>
+                        <div>Descripthion</div>
+                        <button>More Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-4">
+            <button class="trending-show-more">Show More</button>
+        </div>
+    </div>
+    <!-- Offer End -->
+
+    <!-- Products Start -->
+    <div class="container-fluid pt-5 pb-3 mt-3 trending-section">
+        <!-- <div class="trending-heading">
+            <span class="fire">🔥</span>
+            Latest Arrival <span class="highlight">NEW</span>
+        </div> -->
+        <h2 class="section-title position-relative mx-xl-5 mb-4">
+            <span class="pr-3">Latest Arrival</span>
+        </h2>
+        <div class="row px-xl-5 justify-content-center">
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">description short text text short Please.</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">description short text text short Please.</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">description short text text short Please.</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 mt-3">
+                <div class="product-item bg-light">
+                    <div class="product-img position-relative overflow-hidden">
+                        <div class="circle-heart">
+                            <img class="heart-img" src="./icon/heart-regular.svg" alt="">
+                        </div>
+                        <img class="img-fluid w-100" src="img/4f262eaad1a6686f873e13e170389b7b.jpg" alt="">
+                        <div class="new-product">
+                            New
+                        </div>
+                    </div>
+                    <div class="text-center py-2">
+                        <a class="h6 text-decoration-none text-truncate" href="">Product Name Goes Here</a>
+                        <div class="desc-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, obcaecati! Quisquam est iure quasi ipsum officiis illo dolor ipsam quam, exercitationem eum nobis nihil distinctio nostrum, deleniti, maiores autem vero?</div>
+                        <div class="d-flex justify-content-between mt-2 mg-and-w">
+                            <h6 class="price-card-he">$123.00</h6>
+                            <img class="crown-in-card" src="./icon/crown-solid.svg"/>
+                            
+                        </div>
+                        <div class="description-btn">
+                            <button>More Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mt-4">
+            <button class="trending-show-more">Show More</button>
+        </div>
+    </div>
+    <!-- Products End -->
+
+    <!-- Our Team Section Start -->
+    <section class="our-team" id="our-team">
+        <div class="container">
+            <h2 class="section-title">Customer Relationship Specialists</h2>
+            <div class="container-fluid row  mt-5">
+                <div class="col-lg-4 col-12 mt-2">
+                    <!-- From Uiverse.io by abrahamcalsin --> 
+                    <div class="card-client">
+                        <div class="user-picture">
+                            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                            </svg>
+                        </div>
+                        <p class="name-client"> Sidra Zaidan
+                            <span>Sales Representative
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                </svg>
+                                <span class="tooltip-social">Twitter</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                </svg>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                                </svg>
+                                <span class="tooltip-social">Facebook</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                                </svg>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <!-- From Uiverse.io by abrahamcalsin --> 
+                    <div class="card-client">
+                        <div class="user-picture">
+                            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                            </svg>
+                        </div>
+                        <p class="name-client"> Sidra Zaidan
+                            <span>Sales Representative
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                </svg>
+                                <span class="tooltip-social">Twitter</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                </svg>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                                </svg>
+                                <span class="tooltip-social">Facebook</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                                </svg>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 mt-2">
+                    <!-- From Uiverse.io by abrahamcalsin --> 
+                    <div class="card-client">
+                        <div class="user-picture">
+                            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+                            </svg>
+                        </div>
+                        <p class="name-client"> Sidra Zaidan
+                            <span>Sales Representative
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                </svg>
+                                <span class="tooltip-social">Twitter</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                </svg>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path>
+                                </svg>
+                                <span class="tooltip-social">Facebook</span>
+                            </a>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                                </svg>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Team Section End -->
+
+    <!-- Contact Us Start -->
+        <div class="container-fluid py-5 mt-5" id="contact-us-section">
+            <h2 class="section-title position-relative mx-xl-5 mb-4">
+                <span class="pr-3">Contact Us</span>
+            </h2>
+            <div class="row px-xl-5">
+                <!-- Left: Send Message Form -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form class="contact-form p-4 rounded h-100 d-flex flex-column justify-content-center">
+                        <div class="form-group mb-1">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group mb-1">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group mb-1">
+                            <label for="email">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <button class="trending-show-more">Send</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Right: Contact Info -->
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="contact-info-box p-4 w-100">
+                        <div>
+                            <iframe src="https://www.google.com/maps?q=40.7128,-74.0060&z=15&output=embed" width="100%" height="250" frameborder="0" style="border:0; border-radius:8px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <h4 style="    margin-bottom: 4px;">Contact Information</h4>
+                        <p style="    margin-bottom: 4px;">Location: 123 Main Street, Your City, Country</p>
+                        <p style="    margin-bottom: 4px;">Phone: +1 234 567 890</a></p>
+                        <p style="    margin-bottom: 4px;">Email: info@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Contact Us End -->
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 mt-5">
+        <h2 class="section-title position-relative mx-xl-5 mb-4">
+            <span class="pr-3">Our Brands</span>
+        </h2>
+        <div class="row px-xl-5">
+            <div class="col">
+                <div class="owl-carousel vendor-carousel">
+                    <div class="bg-light p-4 text-center">
+                        <img src="./img/montmarte.webp" alt="">
+                        <button class="brand-button">
+                            <span>Go to Products</span>
+                            <!-- <span>
+                                <img src="./icon/arrow-right-solid.svg" alt="" style="color: black;">
+                            </span> -->
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <h5 class="text-secondary text-uppercase mb-4">Get In Touch</h5>
+                <p class="mb-4">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum tempor no vero est magna amet no</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Quick Shop</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">My Account</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Shop</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shop Detail</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Shopping Cart</a>
+                            <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Checkout</a>
+                            <a class="text-secondary" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-secondary text-uppercase mb-4">Newsletter</h5>
+                        <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Your Email Address">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                        <h6 class="text-secondary text-uppercase mt-4 mb-3">Follow Us</h6>
+                        <div class="d-flex">
+                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row border-top mx-xl-5 py-4" style="border-color: rgba(256, 256, 256, .1) !important;">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-secondary">
+                    &copy; <a class="text-primary" href="#">Domain</a>. All Rights Reserved. Designed
+                    by
+                    <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
