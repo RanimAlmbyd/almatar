@@ -863,24 +863,25 @@
             <h2 class="section-title position-relative mx-xl-5 mb-4">
                 <span class="pr-3">Contact Us</span>
             </h2>
-            <div class="row px-xl-5">
+            <div class="row px-xl-5" style="margin-left: 15px;">
                 <!-- Left: Send Message Form -->
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <form class="contact-form p-4 rounded h-100 d-flex flex-column justify-content-center">
-                        <div class="form-group mb-1">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <form class="contact-form p-4 rounded h-100 d-flex flex-column justify-content-start">
+                        <div class="input-group-ui">
+                            <input required="" type="text" name="text" autocomplete="off" class="input-ui w-100">
+                            <label class="user-label-ui">Name</label>
                         </div>
-                        <div class="form-group mb-1">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <div class="input-group-ui mt-3">
+                            <input required="" type="text" name="text" autocomplete="off" class="input-ui w-100">
+                            <label class="user-label-ui">Phone Number</label>
                         </div>
-                        <div class="form-group mb-1">
-                            <label for="email">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                        <div class="input-group-ui mt-3">
+                            <textarea required="" type="text" name="text" autocomplete="off" class="input-ui w-100" style="height: 150px;">
+                            </textarea>
+                            <label class="user-label-ui">Message</label>
                         </div>
                         <div class="row d-flex justify-content-center">
-                            <button class="trending-show-more">Send</button>
+                            <button class="send-message">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -890,10 +891,11 @@
                         <div>
                             <iframe src="https://www.google.com/maps?q=40.7128,-74.0060&z=15&output=embed" width="100%" height="250" frameborder="0" style="border:0; border-radius:8px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
-                        <h4 style="    margin-bottom: 4px;">Contact Information</h4>
-                        <p style="    margin-bottom: 4px;">Location: 123 Main Street, Your City, Country</p>
-                        <p style="    margin-bottom: 4px;">Phone: +1 234 567 890</a></p>
-                        <p style="    margin-bottom: 4px;">Email: info@example.com</a></p>
+                        <div class="bg-light mb-3 mt-3">
+                            <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
+                            <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -999,7 +1001,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <!-- <a href="#" class="btn back-to-top"><i class="fa fa-angle-double-up"></i></a> -->
 
 
     <!-- JavaScript Libraries -->
