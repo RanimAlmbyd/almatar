@@ -1,3 +1,12 @@
+
+document.querySelectorAll(".lang-option").forEach(el => {
+    el.addEventListener("click", function(e) {
+      e.preventDefault();
+      const lang = this.getAttribute("data-lang");
+      setLanguage(lang);
+    });
+});
+
 (function ($) {
     "use strict";
     

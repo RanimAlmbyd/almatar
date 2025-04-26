@@ -3328,7 +3328,7 @@ input[type="button"].btn-block {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #cecece !important;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -9862,12 +9862,13 @@ a.text-dark:hover, a.text-dark:focus {
   width: 35px;
   height: 35px;
   /* border: 2px solid var(--primary-ranim); */
-  border-radius: 5px;
+  /* border-radius: 5px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--primary-ranim);
-  box-shadow: 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+  color: var(--primary-ranim);
+  /* background: var(--primary-ranim); */
+  /* box-shadow: 0 4px 5px rgba(0, 0, 0, .14), 0 1px 10px rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2); */
 
 }
 /* Sidebar hidden by default */
@@ -9879,7 +9880,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 280px;
   background: white;
   transition: all 0.3s ease-in-out;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
   z-index: 1000;
 }
 
@@ -10189,8 +10190,10 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none !important;
 }
 .heart-icon {
-  width: 24px;
-  height: 24px;
+  /* width: 24px;
+  height: 24px; */
+  font-size: 24px;
+  color: white;
 }
 
 .heart-nav-circle {
@@ -10298,10 +10301,8 @@ a.text-dark:hover, a.text-dark:focus {
   background: var(--black-ranim);
   color: var(--primary-ranim);
   transition: all 0.3s cubic-bezier(0.77,0,0.175,1);
-  box-shadow: 2px 0 20px rgba(0,0,0,0.18);
+  /* box-shadow: 2px 0 20px rgba(0,0,0,0.18); */
   z-index: 1000;
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
   overflow-y: auto;
 }
 #sidebar .fw-semibold {
@@ -10313,14 +10314,18 @@ a.text-dark:hover, a.text-dark:focus {
 #sidebar .btn-toggle {
   color: var(--primary-ranim);
   font-weight: 500;
-  border-radius: 8px;
+  /* border-radius: 8px; */
+  transform: translateX(0); 
   transition: background 0.2s, color 0.2s;
 }
+
+
 #sidebar a:hover,
 #sidebar .btn-toggle:hover,
 #sidebar a.active {
-  background: var(--primary-ranim);
-  color: #fff !important;
+  transform: translateX(7px);
+  /* background: red;
+  color: #fff !important; */
 }
 #sidebar .btn-toggle {
   background: transparent;
@@ -10328,9 +10333,13 @@ a.text-dark:hover, a.text-dark:focus {
   outline: none;
   box-shadow: none;
   margin-bottom: 4px;
-  padding: 8px 12px;
+  padding: 6px 12px;
   text-align: left;
   width: 100%;
+  color: var(--black-ranim);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 #sidebar .btn-toggle[aria-expanded="true"] {
   background: var(--primary-ranim);
@@ -10348,7 +10357,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: var(--primary-ranim) !important;
 }
 #sidebar .border-top {
-  border-top: 1px solid var(--primary-ranim) !important;
+  border-top: 1px solid #eee !important;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -10363,7 +10372,6 @@ a.text-dark:hover, a.text-dark:focus {
     width: 90vw;
     min-width: 200px;
     max-width: 320px;
-    border-radius: 0 12px 12px 0;
   }
 }
 /* --- End Sidebar Modern Improvements --- */
@@ -10641,4 +10649,155 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .text-primary{
   color: var(--black-ranim) !important;
+}
+.side-bare-title{
+  align-self: anchor-center;
+  font-family: "Delius", cursive;
+  font-weight: 900;
+  font-style: normal;
+  color: var(--black-ranim);
+}
+.side-bare-line{
+  padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.side-bar-icon{
+  color: var(--gray-dark) !important;
+}
+.side-bar-icon span{
+  font-size: 14px;
+
+}
+.circle-sidebar{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-ranim);
+  text-align: center;
+  color: white;
+}
+
+/* From Uiverse.io by satyamchaudharydev */ 
+/* From uiverse.io by @satyamchaudharydev */
+/* this button is inspired by -- whatsapp input */
+/* == type to see fully interactive and click the close buttom to remove the text  == */
+
+.form-search{
+  --input-bg: #FFf;
+ /*  background of input */
+  --padding: 1.5em;
+  --rotate: 80deg;
+ /*  rotation degree of input*/
+  --gap: 2em;
+  /*  gap of items in input */
+  --icon-change-color: #292929;
+ /*  when rotating changed icon color */
+  --height: 40px;
+ /*  height */
+  width: 200px;
+  padding-inline-end: 1em;
+ /*  change this for padding in the end of input */
+  background: var(--input-bg);
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid var(--black-ranim);
+  width: 100%;
+  height: 42px;
+}
+
+.form-search label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--height);
+}
+
+.form-search input {
+  width: 100%;
+  padding-inline-start: calc(var(--padding) + var(--gap));
+  outline: none;
+  background: none;
+  border: 0;
+}
+/* style for both icons -- search,close */
+.form-search svg {
+  /* display: block; */
+  color: #111;
+  transition: 0.3s cubic-bezier(.4,0,.2,1);
+  position: absolute;
+  height: 15px;
+}
+/* search icon */
+.icon-search {
+  position: absolute;
+  left: var(--padding);
+  transition: 0.3s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* arrow-icon*/
+.swap-off-search {
+  transform: rotate(-80deg);
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button */
+.close-btn-search {
+  /* removing default bg of button */
+  background: none;
+  border: none;
+  right: calc(var(--padding) - var(--gap));
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  padding: 0.1em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.3s;
+  opacity: 0;
+  transform: scale(0);
+  visibility: hidden;
+}
+
+.form-search input:focus ~ .icon-search {
+  transform: rotate(var(--rotate)) scale(1.3);
+}
+
+.form-search input:focus ~ .icon-search .swap-off-search {
+  opacity: 1;
+  transform: rotate(-80deg);
+  visibility: visible;
+  color: var(--icon-change-color);
+}
+
+.form-search input:focus ~ .icon-search .swap-on {
+  opacity: 0;
+  visibility: visible;
+}
+
+.form-search input:valid ~ .icon-search {
+  transform: scale(1.3) rotate(var(--rotate))
+}
+
+.form-search input:valid ~ .icon-search .swap-off-search {
+  opacity: 1;
+  visibility: visible;
+  color: var(--icon-change-color);
+}
+
+.form-search input:valid ~ .icon-search .swap-on {
+  opacity: 0;
+  visibility: visible;
+}
+
+.form-search input:valid ~ .close-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: 0s;
 }

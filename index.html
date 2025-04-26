@@ -10,6 +10,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,23 +56,30 @@
             </div>
             <div class="col-4 d-block d-lg-none d-flex justify-content-end">
                 <div class="circle-user">
-                    <button type="button" class="navbar-toggler d-block d-lg-none" id="sidebarToggle" style="margin-bottom: 6px;">  
-                        <a style="display: block;width: 20px;height: 20px;">
-                            <img src="./icon/user-solid-w.svg" alt="" style="height: 100%; width: 100%;">
-                        </a>
+                    <button type="button" class="navbar-toggler d-block d-lg-none" id="sidebarToggle">  
+                            <i class="fa-solid fa-circle-user" style="font-size: 30px;margin-right: 20px;"></i>
                     </button>
                 </div>
             </div>
             <div class="col-lg-4 col-6 text-left d-none d-lg-block">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for products" style="border-radius: 5px 0px 0px 5px;font-size: 14px;">
-                        <div class="input-group-append text-primary-search-cont">
-                            <span class="input-group-text bg-transparent text-primary-search">
-                                <i class="fa fa-search"></i>
-                            </span>
+                <!-- From Uiverse.io by satyamchaudharydev --> 
+                <form class="form-search">
+                    <label for="search">
+                        <input required="" autocomplete="off" placeholder="search your product" id="search" type="text">
+                        <div class="icon-search">
+                            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
+                            <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off-search">
+                                <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                            </svg>
                         </div>
-                    </div>
+                        <button type="reset" class="close-btn-search">
+                            <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </label>
                 </form>
             </div>
             <div class="col-lg-4 col-6 text-right d-none d-lg-block">
@@ -80,6 +88,19 @@
                 </span>
                 <span class="m-2 span-hover-ranim">
                     <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal" role="button" class="contact-us">Location</a>
+                </span>
+                <span class="m-2 span-hover-ranim">
+                    <a 
+                    href="#" 
+                    data-bs-toggle="dropdown" 
+                    aria-expanded="false" 
+                    role="button" 
+                    class="contact-us"
+                    style="font-size: 17px;"><i class="fa-solid fa-globe"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end lang-dropdown-menu" style="position: absolute;">
+                        <li><a class="dropdown-item lang-option" href="#" data-lang="ar">العربية</a></li>
+                        <li><a class="dropdown-item lang-option" href="#" data-lang="en">English</a></li>
+                    </ul>
                 </span>
             </div>
         </div>
@@ -155,62 +176,89 @@
 
     <!-- Sidebar -->
     <div id="sidebar" class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-        <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-            <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            <span class="fs-5 fw-semibold">Collapsible</span>
+        <a href="/" class="d-flex justify-content-between link-dark text-decoration-none side-bare-line">
+            <img src="./img/logo2.png" alt="" style="width: 45px;">
+            <span class="side-bare-title">Almatar Store</span>
           </a>
           <ul class="list-unstyled ps-0">
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                Home
-              </button>
-              <div class="collapse" id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Overview</a></li>
-                  <li><a href="#" class="link-dark rounded">Updates</a></li>
-                  <li><a href="#" class="link-dark rounded">Reports</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                Dashboard
-              </button>
-              <div class="collapse" id="dashboard-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">Overview</a></li>
-                  <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                  <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                  <li><a href="#" class="link-dark rounded">Annually</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                Orders
-              </button>
-              <div class="collapse" id="orders-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">New</a></li>
-                  <li><a href="#" class="link-dark rounded">Processed</a></li>
-                  <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                  <li><a href="#" class="link-dark rounded">Returned</a></li>
-                </ul>
-              </div>
-            </li>
+            <li style="margin-top: 10px;">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-house mr-2"></i>
+                    <span>Home</span>
+                </button>
+              </li>
+              
+              
+              <li style="margin-top: 10px;">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-crown mr-2"></i>
+                    <span>Gold Section</span>
+                </button>
+              </li>
+              <li style="margin-top: 10px;">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-regular fa-gem mr-2"></i>
+                    <span>Platinum Section</span>
+                </button>
+              </li>
+              <li style="margin-top: 10px;">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-medal mr-2"></i>
+                    <span>Bronze Section</span>
+                </button>
+              </li>
+              <li style="margin-top: 10px;">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-palette mr-2"></i>
+                    <span>For Professionals</span>
+                </button>
+              </li>
+              <li style="margin-top: 10px;">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-puzzle-piece mr-2"></i>
+                    <span>For Beginners</span>
+                </button>
+              </li>
             <li class="border-top my-3"></li>
             <li class="mb-1">
-              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                Account
-              </button>
-              <div class="collapse" id="account-collapse">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-heart mr-2"></i>
+                    <span>Favorites</span>
+                    <span class="circle-sidebar" style="margin-left: 108px;">1</span>
+                </button>
+              <!-- <div class="collapse" id="account-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-dark rounded">New...</a></li>
+                  <li><a href="#" class="link-dark rounded">login</a></li>
                   <li><a href="#" class="link-dark rounded">Profile</a></li>
                   <li><a href="#" class="link-dark rounded">Settings</a></li>
                   <li><a href="#" class="link-dark rounded">Sign out</a></li>
                 </ul>
-              </div>
+              </div> -->
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-basket-shopping mr-2" ></i>
+                    <span>My Purchases</span>
+                    <span class="circle-sidebar" style="margin-left: 73px;">3</span>
+                </button>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-phone mr-2"></i>
+                    <span>
+                        <a  href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" role="button" class="contact-us" style="color: var(--gray-dark);">
+                            Contact Us
+                        </a> </span>
+                </button>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed nav-icon side-bar-icon" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                    <i class="fa-solid fa-location-dot mr-2"></i>
+                    <span>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#mapModal" role="button" class="contact-us" style="color: var(--gray-dark);">Location</a>
+                    </span>
+                </button>
             </li>
           </ul>
     </div>
@@ -258,30 +306,41 @@
                     <div class="navbar-nav ml-auto py-0 d-none col-lg-2 d-lg-block">
                         <div class="d-flex justify-content-end w-100 gap-4">
                             <a href="" class="btn px-0 heart-nav d-flex align-items-center gap-1 position-relative">
-                                <img src="./icon/heart-solid-wh.svg" class="heart-icon" />
+                                <i class="fa-solid fa-heart heart-icon"></i>
                                 <span class="heart-nav-circle">5</span>
                             </a>
                             <a href="" class="btn px-0 heart-nav d-flex align-items-center gap-1 position-relative">
-                                <img src="./icon/basket-shopping-solid-wh.svg" class="heart-icon" />
+    
+                                <i class="fa-solid fa-basket-shopping heart-icon"></i> 
                                 <span class="heart-nav-circle">5</span>
                             </a>
                             <a href="" class="btn px-0 heart-nav d-flex align-items-center gap-1 position-relative">
-                                <img src="./icon/globe-solid-wh.svg" class="heart-icon" />
+                                <i class="fa-solid fa-user heart-icon"></i>
                                 <!-- <span class="heart-nav-circle">5</span> -->
                             </a>
+                            
                         </div>
                         
                     </div>
                     <div class="col-12 text-left d-block d-lg-none">
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for products" style="border-radius: 5px 0px 0px 5px;font-size: 14px;">
-                                <div class="input-group-append text-primary-search-cont">
-                                    <span class="input-group-text bg-transparent text-primary text-primary-search">
-                                        <i class="fa fa-search"></i>
-                                    </span>
+                        <!-- From Uiverse.io by satyamchaudharydev --> 
+                        <form class="form-search">
+                            <label for="search">
+                                <input required="" autocomplete="off" placeholder="search your product" id="search" type="text">
+                                <div class="icon-search">
+                                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                                    </svg>
+                                    <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="swap-off-search">
+                                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                                    </svg>
                                 </div>
-                            </div>
+                                <button type="reset" class="close-btn-search">
+                                    <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                                        <path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                            </label>
                         </form>
                     </div>
                 </nav>
@@ -337,8 +396,8 @@
     <!-- Carousel End -->
 
     <!-- Our Category -->
-    <div class="container-fluid pt-5 pb-3 mt-3 position-relative">
-        <h2 class="section-title position-relative mx-xl-5 mb-4">
+    <div class="container-fluid pt-5 pb-3 position-relative">
+        <h2 class="section-title position-relative mx-xl-5 mb-5">
             <span class="pr-3">Our Category</span>
         </h2>
         <div id="left-btn-scroll" class="scroll-btn" style="left: 10px;">
@@ -439,12 +498,12 @@
 
 
     <!-- Products Start -->
-    <div class="container-fluid pt-5 pb-3 mt-3 trending-section">
+    <div class="container-fluid pt-5 pb-3 trending-section">
         <!-- <div class="trending-heading">
             <span class="fire">🔥</span>
             Trending <span class="highlight">NOW</span>
         </div> -->
-        <h2 class="section-title position-relative mx-xl-5 mb-4">
+        <h2 class="section-title position-relative mx-xl-5 mb-5">
             <span class="pr-3">Trending Now</span>
         </h2>
         <div class="row px-xl-5 justify-content-center">
@@ -557,8 +616,8 @@
 
 
     <!-- Offer Start -->
-    <div class="container pt-5 pb-3 mt-3">
-        <h2 class="section-title position-relative mx-xl-5 mb-4">
+    <div class="container pt-5">
+        <h2 class="section-title position-relative mx-xl-5 mb-5">
             <span class="pr-3">Offers & discounts</span>
         </h2>
         <div class="row px-xl-5">
@@ -605,12 +664,12 @@
     <!-- Offer End -->
 
     <!-- Products Start -->
-    <div class="container-fluid pt-5 pb-3 mt-3 trending-section">
+    <div class="container-fluid pt-5 pb-3 trending-section">
         <!-- <div class="trending-heading">
             <span class="fire">🔥</span>
             Latest Arrival <span class="highlight">NEW</span>
         </div> -->
-        <h2 class="section-title position-relative mx-xl-5 mb-4">
+        <h2 class="section-title position-relative mx-xl-5 mb-5">
             <span class="pr-3">Latest Arrival</span>
         </h2>
         <div class="row px-xl-5 justify-content-center">
@@ -724,7 +783,9 @@
     <!-- Our Team Section Start -->
     <section class="our-team" id="our-team">
         <div class="container">
-            <h2 class="section-title">Customer Relationship Specialists</h2>
+            <h2 class="section-title position-relative mx-xl-5 mb-5">
+                <span class="pr-3">Customer Relationship Specialists</span>
+            </h2>
             <div class="container-fluid row  mt-5">
                 <div class="col-lg-4 col-12 mt-2">
                     <!-- From Uiverse.io by abrahamcalsin --> 
@@ -852,8 +913,8 @@
     <!-- Our Team Section End -->
 
     <!-- Contact Us Start -->
-        <div class="container-fluid py-5 mt-5" id="contact-us-section">
-            <h2 class="section-title position-relative mx-xl-5 mb-4">
+        <div class="container-fluid pt-5" id="contact-us-section">
+            <h2 class="section-title position-relative mx-xl-5 mb-5">
                 <span class="pr-3">Contact Us</span>
             </h2>
             <div class="row px-xl-5" style="margin-left: 15px;">
@@ -908,8 +969,8 @@
         <!-- Contact Us End -->
 
     <!-- Vendor Start -->
-    <div class="container-fluid py-5 mt-5">
-        <h2 class="section-title position-relative mx-xl-5 mb-4">
+    <div class="container-fluid pt-5">
+        <h2 class="section-title position-relative mx-xl-5 mb-5">
             <span class="pr-3">Our Brands</span>
         </h2>
         <div class="row px-xl-5">
