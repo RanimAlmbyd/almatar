@@ -9723,7 +9723,7 @@ a.text-dark:hover, a.text-dark:focus {
 .product-item {
   transition: .5s;
   border-radius: 5px;
-  padding: 10px;
+  /* padding: 10px; */
   /* width: 18rem; */
 }
 
@@ -10038,11 +10038,12 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: var(--black-ranim);
   border-radius: 5px;
   padding: 10px 20px; /* Increased padding */
-  margin: 15px auto; /* Adjusted margin */
+  margin: 5px auto; /* Adjusted margin */
   width: 100%;
   transition: background-color .35s ease-in-out ;
   text-align: center;
   font-weight: 600; /* Added font-weight */
+  font-size: 13px;
 }
 .description-btn:hover{
   background-color: var(--black-hover-ranim);
@@ -10265,15 +10266,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .trending-show-more {
   display: inline-block;
-  width: 11rem;
+  width: 10rem;
   margin: .5rem auto 0 auto;
   padding: 0.65rem 2.3rem;
   border-radius: 5px;
   background-color: var(--black-ranim);
   color: #fff;
-  font-size: 1.13rem;
+  font-size: 14px;
   font-weight: 600;
-  box-shadow: 0 2px 10px rgba(205,31,37,0.10);
+  box-shadow: 0 2px 10px rgba(205, 31, 37, 0.10);
   border: none;
   transition: background 0.2s, box-shadow 0.2s, color 0.2s;
   cursor: pointer;
@@ -10377,18 +10378,30 @@ a.text-dark:hover, a.text-dark:focus {
 /* --- End Sidebar Modern Improvements --- */
 .desc-card{
   text-align: center;
-  font-size: 15px;
-  height: 45px;
+  font-size: 13px;
+  height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0px 4px;
   margin-top: 6px;
+  white-space: nowrap;
+}
+.title-card{
+  color: var(--black-ranim);
+  text-align: center;
+  font-size: 14px;
+  height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px 4px;
+  margin-top: 6px;
+  white-space: nowrap;
 }
 .price-card-he{
   font-size: 20px;
 }
 .crown-in-card{
-  width: 25px;
+  width: 20px;
   margin-right: 10px;
   margin-bottom: 9px;
 }
@@ -10396,7 +10409,7 @@ a.text-dark:hover, a.text-dark:focus {
 /* From Uiverse.io by abrahamcalsin */ 
 .card-client {
   background: #f0f0f0; /* Light gray background */
-  width: 20rem;
+  width: 100%;
   margin: 0px auto;
   padding-top: 25px;
   padding-bottom: 25px;
