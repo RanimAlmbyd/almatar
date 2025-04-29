@@ -1,9 +1,16 @@
 
-document.querySelectorAll(".lang-option").forEach(el => {
-    el.addEventListener("click", function(e) {
+document.querySelectorAll('.lang-option').forEach(function(langItem) {
+    langItem.addEventListener('click', function(e) {
       e.preventDefault();
-      const lang = this.getAttribute("data-lang");
-      setLanguage(lang);
+      const selectedLang = this.getAttribute('data-lang');
+
+      if (selectedLang === 'ar') {
+        document.documentElement.setAttribute('dir', 'rtl');
+        document.documentElement.setAttribute('lang', 'ar');
+      } else {
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.documentElement.setAttribute('lang', 'en');
+      }
     });
 });
 
