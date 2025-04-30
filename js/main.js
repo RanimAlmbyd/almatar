@@ -3,13 +3,15 @@ document.querySelectorAll('.lang-option').forEach(function(langItem) {
     langItem.addEventListener('click', function(e) {
       e.preventDefault();
       const selectedLang = this.getAttribute('data-lang');
-
+      const locationContactUL = document.getElementById('location-contact-ul');
       if (selectedLang === 'ar') {
         document.documentElement.setAttribute('dir', 'rtl');
         document.documentElement.setAttribute('lang', 'ar');
+        locationContactUL.classList.remove('text-right');
       } else {
         document.documentElement.setAttribute('dir', 'ltr');
         document.documentElement.setAttribute('lang', 'en');
+        locationContactUL.classList.add('text-right');
       }
     });
 });
